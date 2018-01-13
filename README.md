@@ -1,4 +1,4 @@
-# Faction themes X-* headers emitted by WyriMaps.net and other related services
+# X-* headers emitted by WyriHaximus.net and other related services
 
 [![Linux Build Status](https://travis-ci.org/WyriHaximusNet/php-x-headers.png)](https://travis-ci.org/WyriHaximusNet/php-x-headers)
 [![Latest Stable Version](https://poser.pugx.org/wyrihaximus-net/x-headers/v/stable.png)](https://packagist.org/packages/wyrihaximus-net/x-headers)
@@ -23,7 +23,6 @@ The following echo's a random header from the set:
 $headers = Headers::headers();
 echo $headers[random_int(0, (count($headers) - 1))];
 ```
-
 
 ## Contributing ##
 
