@@ -4,7 +4,7 @@ namespace WyriHaximusNet\XHeaders;
 
 final class Headers
 {
-    public static function headers()
+    public static function headers(): array
     {
         return [
             'X-nananana' => 'Batcache',
