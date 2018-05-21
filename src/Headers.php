@@ -8,7 +8,7 @@ final class Headers
     {
         return [
             'X-nananana' => 'Batcache',
-            'X-Wars' => 'May the Force by with us',
+            'X-Wars' => 'May the Force be with us',
             'X-Trek' => 'Live long and prosper',
             'X-Gate' => 'Jaffa! Kree!',
             'X-Oniell' => 'In the middle of my backswing!',
