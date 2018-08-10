@@ -15,6 +15,7 @@ final class Headers
             'X-Tealc' => 'Indeed',
             'X-Anna' => 'Do you want to build a snowman?',
             'X-Olaf' => 'I love summer!',
+            'X-Wing' => 'Pew pew',
         ];
     }
 }
