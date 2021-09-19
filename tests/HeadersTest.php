@@ -1,17 +1,27 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace WyriHaximusNet\Tests\XHeaders;
 
-use PHPUnit\Framework\TestCase;
+use WyriHaximus\TestUtilities\TestCase;
 use WyriHaximusNet\XHeaders\Headers;
 
 final class HeadersTest extends TestCase
 {
-    public function testHeaders()
+    /**
+     * @test
+     */
+    public function header(): void
     {
-        foreach (Headers::headers() as $header => $value) {
-            self::assertInternalType('string', $header);
-            self::assertInternalType('string', $value);
-        }
+        self::assertCount(1, Headers::random(1));
+    }
+
+    /**
+     * @test
+     */
+    public function headers(): void
+    {
+        self::assertCount(3, Headers::random(3));
     }
 }

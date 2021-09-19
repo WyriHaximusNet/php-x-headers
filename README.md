@@ -1,18 +1,17 @@
 # X-* headers emitted by WyriHaximus.net and other related services
 
-[![Linux Build Status](https://travis-ci.org/WyriHaximusNet/php-x-headers.png)](https://travis-ci.org/WyriHaximusNet/php-x-headers)
+![Continuous Integration](https://github.com/wyrihaximusnet/php-x-headers/workflows/Continuous%20Integration/badge.svg)
 [![Latest Stable Version](https://poser.pugx.org/wyrihaximus-net/x-headers/v/stable.png)](https://packagist.org/packages/wyrihaximus-net/x-headers)
 [![Total Downloads](https://poser.pugx.org/wyrihaximus-net/x-headers/downloads.png)](https://packagist.org/packages/wyrihaximus-net/x-headers/stats)
-[![Code Coverage](https://scrutinizer-ci.com/g/WyriHaximusNet/php-x-headers/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/WyriHaximusNet/php-x-headers/?branch=master)
-[![License](https://poser.pugx.org/wyrihaximus-net/x-headers/license.png)](https://packagist.org/packages/wyrihaximus/react-psr-3-stdio)
-[![PHP 7 ready](http://php7ready.timesplinter.ch/WyriHaximusNet/php-x-headers/badge.svg)](https://travis-ci.org/WyriHaximusNet/php-x-headers)
+[![Type Coverage](https://shepherd.dev/github/wyrihaximusnet/php-x-headers/coverage.svg)](https://shepherd.dev/github/wyrihaximusnet/php-x-headers)
+[![License](https://poser.pugx.org/wyrihaximus-net/x-headers/license.png)](https://packagist.org/packages/wyrihaximus-net/x-headers)
 
 ### Installation ###
 
 To install via [Composer](http://getcomposer.org/), use the command below, it will automatically detect the latest version and bind it with `^`.
 
 ```
-composer require wyrihaximus-net/x-headers 
+composer require wyrihaximus-net/x-headers
 ```
 
 ## Usage ##
@@ -20,8 +19,14 @@ composer require wyrihaximus-net/x-headers
 The following echo's a random header from the set:
 
 ```php
-$headers = Headers::headers();
+$headers = Headers::HEADERS;
 echo $headers[random_int(0, (count($headers) - 1))];
+```
+
+Alternatively you can get a list of randomly selected headers:
+
+```php
+var_export(Headers::random(6));
 ```
 
 ## Contributing ##
@@ -30,7 +35,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## License ##
 
-Copyright 2018 [WyriHaximus.net](https://wyrihaximus.net/)
+Copyright 2021 [WyriHaximus.net](https://wyrihaximus.net/)
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
