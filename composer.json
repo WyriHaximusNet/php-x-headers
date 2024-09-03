@@ -1,6 +1,6 @@
 {
     "name": "wyrihaximus-net/x-headers",
-    "description": "The X-* headers emitted by wyrihaximus.net and other related services",
+    "description": "The X-* headers emitted by WyriHaximus.net and other related services",
     "license": "MIT",
     "authors": [
         {
@@ -9,21 +9,10 @@
         }
     ],
     "require": {
-        "php": "^7.4"
+        "php": "^8.2"
     },
     "require-dev": {
-        "wyrihaximus/test-utilities": "^3.7.3"
-    },
-    "config": {
-        "platform": {
-            "php": "7.4.7"
-        },
-        "sort-packages": true
-    },
-    "extra": {
-        "unused": [
-            "php"
-        ]
+        "wyrihaximus/test-utilities": "^6.0.9"
     },
     "autoload": {
         "psr-4": {
@@ -34,5 +23,28 @@
         "psr-4": {
             "WyriHaximusNet\\Tests\\XHeaders\\": "tests/"
         }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "ergebnis/composer-normalize": true,
+            "icanhazstring/composer-unused": true,
+            "infection/extension-installer": true,
+            "ocramius/package-versions": true
+        },
+        "platform": {
+            "php": "8.2.13"
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "composer normalize",
+            "composer update --lock --no-scripts"
+        ],
+        "post-update-cmd": [
+            "composer normalize",
+            "composer update --lock --no-scripts"
+        ]
     }
 }
