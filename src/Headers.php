@@ -22,9 +22,7 @@ final class Headers
         'X-ClacksOverhead' => 'GNU Terry Pratchett',
     ];
 
-    /**
-     * @return iterable<string, string>
-     */
+    /** @return iterable<string, string> */
     public static function random(int $count): iterable
     {
         $keys = array_rand(self::HEADERS, $count);

@@ -9,19 +9,15 @@ use WyriHaximusNet\XHeaders\Headers;
 
 final class HeadersTest extends TestCase
 {
-    /**
-     * @test
-     */
+    /** @test */
     public function header(): void
     {
-        self::assertCount(1, Headers::random(1));
+        self::assertCount(1, [...Headers::random(1)]);
     }
 
-    /**
-     * @test
-     */
+    /** @test */
     public function headers(): void
     {
-        self::assertCount(3, Headers::random(3));
+        self::assertCount(3, [...Headers::random(3)]);
     }
 }
