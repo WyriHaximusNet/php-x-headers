@@ -35,7 +35,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## License ##
 
-Copyright 2021 [WyriHaximus.net](https://wyrihaximus.net/)
+Copyright 2026 [WyriHaximus.net](https://wyrihaximus.net/)
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
